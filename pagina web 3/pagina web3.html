@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<main>
+		<header>
+			<div class="title">
+				<h1>Formularo para elaboración de CV</h1>
+			</div>
+		</header>
+		
+		<div class="form__container">
+			<form action="" class="formulario" id="formulario">
+
+				<!-- Grupo: Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de nombre inválido.</p>
+				</div>
+
+				<!-- Grupo: Apellido -->
+				<div class="formulario__grupo" id="grupo__apellido">
+					<label for="apellido" class="formulario__label">Apellido</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de apellido inválido.</p>
+				</div>
+
+				<!-- Grupo: Edad -->
+				<div class="formulario__grupo" id="grupo__edad">
+					<label for="edad" class="formulario__label">Edad</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="edad" id="edad" placeholder="Edad">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de edad inválido</p>
+				</div>
+
+				<!-- Grupo: Contraseña -->
+				<div class="formulario__grupo" id="grupo__password">
+					<label for="password" class="formulario__label">Contraseña</label>
+					<div class="formulario__grupo-input">
+						<input type="password" class="formulario__input" name="password" id="password">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				</div>
+
+				<!-- Grupo: Dirección -->
+				<div class="formulario__grupo" id="grupo__direccion">
+					<label for="direccion" class="formulario__label">Dirección</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Dirección">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de dirección inválido.</p>
+				</div>
+
+				<!-- Grupo: Código Postal -->
+				<div class="formulario__grupo" id="grupo__codigop">
+					<label for="codigop" class="formulario__label">Código Postal</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="codigop" id="codigop" placeholder="Código Postal">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de código postal inválido</p>
+				</div>
+
+				<!-- Grupo: Correo Electronico -->
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Correo Electrónico</label>
+					<div class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				</div>
+
+				<!-- Grupo: Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Teléfono</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				</div>
+
+				<!-- Grupo: Experiencia -->
+				<div class="formulario__grupo" id="grupo__experiencia">
+					<label for="experiencia" class="formulario__label">Háblanos sobre tu experiencia laboral</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="experiencia" id="experiencia" placeholder="Experiencia">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de texto inválido</p>
+				</div>
+
+				<!-- Grupo: Habilidades -->
+				<div class="formulario__grupo" id="grupo__habilidades">
+					<label for="habilidades" class="formulario__label">Cuéntanos sobre tus habilidades</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="habilidades" id="habilidades" placeholder="Habilidades">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Formato de texto inválido</p>
+				</div>
+
+				<!-- Grupo: Terminos y Condiciones -->
+				<div class="formulario__grupo" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+						Acepto los Terminos y Condiciones
+					</label>
+				</div>
+
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				</div>
+
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<script src="formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
